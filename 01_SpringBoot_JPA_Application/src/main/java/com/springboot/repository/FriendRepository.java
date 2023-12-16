@@ -2,10 +2,10 @@ package com.springboot.repository;
 
 import java.io.Serializable;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.springboot.model.FriendList;
 
-public interface FriendRepository extends CrudRepository<FriendList, Serializable> {
+public interface FriendRepository extends JpaRepository<FriendList, Serializable> {
 
 }
