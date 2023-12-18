@@ -19,7 +19,7 @@ public class BookController {
 		Book b3= new Book(103,"Spring",5520.00);
 		Book b4= new Book(104,"AWS",4120.00);
 		List<Book> list = Arrays.asList(b1,b2,b3,b4);
-		model.addAttribute("b", list);
+		model.addAttribute("books", list);
 		return "books";
 	}
 	@GetMapping("/")
